@@ -40,5 +40,5 @@ Please submit your final responses as a pull request to a fork of this repo by F
 
 ## The Prize
 
-The best submission will win $250 prize and quality submission are eligible for a paid summer internship with ARGO on our big water data or other urban analytics projects!  That and the opportunity to build a brighter future for California! 
+The best submission will win a $250 prize and quality submission are eligible for a paid summer internship with ARGO on our big water data or other urban analytics projects!  That and the opportunity to build a brighter future for California! 
 
