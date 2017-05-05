@@ -36,7 +36,7 @@ See here for the results of the [CA Water Data Challenge last year to get inspir
 
 ## Timeline
 
-Please submit your final responses as a pull request to a fork of this repo by Friday May 26th at 5 PM PST.  We will have office hours on Thursday May 18th in person at the [LA Clean Technology Incubator](http://laincubator.org/) from 2:30-3:30 PM.  If there's interest we can also do a virtual video chat as well during that time to answer questions.
+Please submit your final responses as a pull request from a fork of this repo by Friday May 26th at 5 PM PST.  We will have office hours on Thursday May 18th in person at the [LA Clean Technology Incubator](http://laincubator.org/) from 2:30-3:30 PM.  If there's interest we can also do a virtual video chat as well during that time to answer questions.
 
 ## The Prize
 
