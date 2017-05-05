@@ -20,7 +20,7 @@ Please leave any questions about the datasets in the issues so they form a reaus
 (4) what other data can be brought to bear on this topic (precip, storm water dry weather flows, etc.)?
 (5) find other patterns and unique insights!
 
-An [example operational report can be found here](https://ciwqs.waterboards.ca.gov/ciwqs/readOnly/publicReportSSOPerformance.jsp?wdid=1SSO10001&startDate=&endDate=).
+An [example operational report analyzing this data can be found here](https://ciwqs.waterboards.ca.gov/ciwqs/readOnly/publicReportSSOPerformance.jsp?wdid=1SSO10001&startDate=&endDate=).
 
 ## Timeline
 
