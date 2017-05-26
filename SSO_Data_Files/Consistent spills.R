@@ -67,12 +67,10 @@ l<-plot_ly(x=four[(1:20),c("wdid")],y=four[(1:20),c("No_Of_Req")],type="scatter"
 l
 write.csv(head(four,20),file="Top_20_CS_By_No._Of_Requests.csv")
 export(l,file="Top_20_CS_By_No._Of_Requests.png")
-barplot(x=four[(1:30),c("wdid")],y=four[(1:30),c("No_Of_Req")])
-p
-export(p,file='plotw.png')
 
-qplot(am)
-write.csv(melt(am),file='plotw.csv')
+
+
+
 
 
 

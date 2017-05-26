@@ -66,3 +66,18 @@ j<-plot_ly(head(max_imp,20),x=~Collection.System,y=~spill_impact,
   layout(xaxis=list(categoryorder="trace"))
 export(j, file = "Top_20_CS_by_Maximum_Impact.png")
 
+top_spills<-sso_req1[order(-sso_req1$SPILL.VOL),]
+write.csv(head(top_spills,20),file="Top_20_SPill_cases_volume.csv")
+j<-plot_ly(head(top_spills,20),x=~Collection.System,y=~SPILL.VOL,
+           type="scatter",mode="markers+text",text=~SPILL.VOL,marker=list(color="magenta"),
+           textposition = 'top')%>%
+  layout(xaxis=list(categoryorder="trace"))
+export(j, file = "Top_20_SPill_cases_volume.png")
+
+top_spills_surf<-sso_req1[order(-sso_req1$SPILL.VOL.REACH.SURF),]
+write.csv(head(top_spills_surf,20),file="Top_20_SPill_cases_reaching_surfacewater.csv")
+j<-plot_ly(head(top_spills_surf,20),x=~Collection.System,y=~SPILL.VOL.REACH.SURF,
+           type="scatter",mode="markers",marker=list(color="black"),
+           textposition = 'top')%>%
+  layout(xaxis=list(categoryorder="trace"))
+export(j, file = "Top_20_SPill_cases_reaching_surfacewater.png")
