@@ -1,44 +1,73 @@
-# Sewer_Overflow_Data_Challenge
+The Complete Visualization Can be found here-
 
-One month data open data challenge to win a summer informatics internship with ARGO!
+http://bit.ly/California_Sewage_Spills_ARGO
 
-## Why visualize Sanitary Sewer Outflows?
+Please be patient as the visualization is hosted on an amazon aws free instance and may sometimes take about 30 seconds to load:)
 
-No one wants sewage in their street! "A sanitary sewer overflow (SSO) is any overflow, spill, release, discharge or diversion of untreated or partially treated wastewater from a sanitary sewer system."  
+The Visualization Contains four tabs-
 
-Moreover, California signed in to law the Open and Transparent Water Data Act last year and the goal of this visualization challenge is to support state implementation by showing what is possible with modern digital tools.
+1.California-
+	Displays the spill Volume for the whole state of california.The radius of the circle signifies the volume of spill.
 
-## The Data Challenge
+	The graphs for the whole state can be displayed by checking the show graphs checkbox and selecting the desired graph.The graphs can be described as:
+		a.Consistent Spills-The number of Collection Systems that have been consistently getting spills by the number of months.In all "16" such collection systems are identified with spills throughout the period specified in the dataset and are included in the "Top_consistently_Spilling_CS.csv" file.
+		b.Distribution By Spill Cause-Pie Chart that displays the distribution of spills with respect to causes.In general,
+		"Root Intrusion" is identified to be the main cause of spills.
+		c.Spill Requests By County-Bar graph to display the spills by each county."Sacramento" had the maximum number of spills over the years.
+		d.Spill Voulme By Quantity-A scatterplot to display the total volume spilled,Total Volume Recovered,Total Volume reaching Land and Total Volume Reaching Surface Water by County.It was observed that "San Bernardino" was the highest with the most spill volume.
 
-Create an epic visualization of Sanitary Sewer Outflows (SSO)!  The data is available in the SSO_Data folder in this repo and the [original files can be found at the following link](http://www.waterboards.ca.gov/water_issues/programs/sso/docs/index.php).  
+	The Graphs can be saved by clicking the small camera icon that appears on hovering above the graphs.
 
-Note in particular that "The SSO Data tables above are all keyed on the sanitary system WDID number." 
+2.County-
+	Displays the spill Volume and spill volume reaching surface water for the selected County.The radius of the circle signifies the volume of spill.
 
-Also note that the data fields are defined on that Glossary of Terms at the top of the page on the orignal file link above and [directly here](http://www.waterboards.ca.gov/water_issues/programs/sso/glossary.shtml).
+	The Graphs can be made visible by clicking the show graphs checkbox.
+	Each County Contains the following Graphs:
+		a.Distribution By Spill Cause for each county.
+		b.Spill Volume By Year:Changes in the spill volume over the years for the selected county.
+		c.Top 15 Collection System by spill requests : bar chart to display the top 15 collection systems with most spill cases for each county.
+		d.Top 15 CS by volume:Bar chart to display the top 15 collection systems with most volume spilled for each county.
+	Again,the Graphs can be saved by clicking the small camera icon that appears on hovering above the graphs.	
+	Also,the map plots can be turned on or off based on the checkbox on the top right hand corner of the screen to display the desired value only.
 
-Please leave any questions about the datasets in the GitHub issues on this page so they form a reausable resource for future participants!  A helpful guide to [GitHub issues is available here](https://guides.github.com/features/issues/).
+3.Collection System-
+	Displays the spill Volume,spill volume reaching surface water and the location of the spills for the selected Collection system.
+	The radius of the circle signifies the volume of spill.
 
-## Questions to Explore
+	The Graphs can be made visible by clicking the show graphs checkbox.
+	Each Collection System Contains the following Graphs:
+		a.Distribution By Spill Cause for each county.
+		b.Frequency of spills over the years for each collection system.
+		c.Spills By Date-scatter plot to display Spill volume,Spill volume reaching surface water,spill volume reaching land and spill volume recovered for each spill observed by the collection system.
+		d.Analysis of Spills-The boxplot to analyse the Spill volume,Spill volume reaching surface water,spill volume reaching land and spill volume recovered for each collection System.
+	Again,the Graphs can be saved by clicking the small camera icon that appears on hovering above the graphs.	
+	Also,the map plots can be turned on or off based on the checkbox at the top right hand corner of the screen to display the desired value only.	
 
-Again you can find the [glossary of terms used in the datasets available here](http://www.waterboards.ca.gov/water_issues/programs/sso/glossary.shtml). In particular we recommend looking at SSO.csv and digging into the following questions:
+4.Tabular Data
+	All Spills and their important info faced by the selected collection system.
 
-(1) where and how bad (volume, made it to receiving water, etc.) are the sewage leaks (SSOs)? 
-(2) how are sewage leaks changing over time? 
-(3) which agencies have the most (by occurence, by volume, etc.) sewage leaks? 
-(4) what other data can be brought to bear on this topic (precip, storm water dry weather flows, etc.)?
-(5) find other patterns and unique insights!
+Some more information like the weather of that particular place before the spill could really be helpful in predeterming potential spill areas.
 
-An [example operational report analyzing this data can be found here](https://ciwqs.waterboards.ca.gov/ciwqs/readOnly/publicReportSSOPerformance.jsp?wdid=1SSO10001&startDate=&endDate=).
+All the graphs are interactive,i.e.,you can zoom in and out,select parts to display by clicking on the appropriate label and displays legends on hovering above them.
 
-## Resources
+The graphs folder also contains some CSV files that identifies some of the top collection systems based on total spill Volume,Total impact(Spill volume - spill volume recovered),etc.
 
-See here for the results of the [CA Water Data Challenge last year to get inspired](https://docs.google.com/spreadsheets/d/1yk_mIFK1WIlKTUvShKqi_GaOpHdvtOLbqu_bm2kQJ4w/edit?ts=5848ace7#gid=0)!  For potential visualization tools, see https://infogr.am/, https://www.silk.co/, datavizforall.org and https://public.tableau.com/s/.
 
-## Timeline
+The Top_20.R and the consistent spills.R contains the R code that generates the above csv files.Please Make sure to set the approriate working directory for the input CSV files before running these.
 
-Please submit your final responses as a pull request from a fork of this repo by Friday May 26th at 5 PM PST.  We will have office hours on Thursday May 18th in person at the [LA Clean Technology Incubator](http://laincubator.org/) from 2:30-3:30 PM.  If there's interest we can also do a virtual video chat as well during that time to answer questions.
+The Application folder contains the server.R and ui.R files that are creating the visualization.
 
-## The Prize
+for queries and additional information.
+contact-Bhavesh Motwani
+		bmotwani@usc.edu
+		3235409767
+		Linkedin-https://www.linkedin.com/in/bhavesh-motwani
 
-The best submission will win a $250 prize and quality submission are eligible for a paid summer internship with ARGO on our big water data or other urban analytics projects!  That and the opportunity to build a brighter future for California! 
 
+The Complete Visualization Can be found here-
+
+http://bit.ly/California_Sewage_Spills_ARGO
+
+Please be patient as the visualization is hosted on an amazon aws free instance and may sometimes take about 30 seconds to load:)
+
+THANK YOU.
